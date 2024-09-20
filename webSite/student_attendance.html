@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styelSheet.css">
+    <script language="javascript" src="./javascript.js"></script>
+</head>
+<body>
+    <h1 class="AppBar">This Student Attendance Table</h1>
+    <form >
+        Enter Name: <input type="text" id="nameInput"><br><br>
+        Enter Roll No: <input type="text" id="rollInput"><br><br>
+        Enter Department: <input type="text" id="dptInput"><br><br>
+        <input type="button" onclick="inputFun()" value="Submit"><br><br>
+    </form>
+    <input type="button" onclick="Display()" value="Display">
+    <br><br>
+    <table>
+        <tr>
+            <th>Name </th>
+            <th>Roll number</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <table >
+                <output id="rowData"></output>
+            </table>
+        </tr>
+    </table>
+</body>
+</html>

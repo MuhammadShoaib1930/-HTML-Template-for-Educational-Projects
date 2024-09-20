@@ -1,0 +1,15 @@
+#fly {
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 100px;
+    border: solid black;
+    opacity: .8;
+    box-shadow: 20px 20px 20px rgb(230, 125, 142);
+}
+input:hover{
+    background-color: blue;
+    color: white;
+}
