@@ -1,15 +1,70 @@
-#fly {
-    height: 120px;
-    width: 120px;
-    background-color: blue;
-    border-radius: 50px;
-    padding: 10px;
-    margin: 100px;
-    border: solid black;
-    opacity: .8;
-    box-shadow: 20px 20px 20px rgb(230, 125, 142);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-input:hover{
-    background-color: blue;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.AppBar {
+    background-color: #3f51b5;
     color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.homeButton {
+    margin: 10px 0;
+}
+.links,
+.homeButton a {
+    text-decoration: none;
+    color: white;
+    background-color: #3f51b5;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.links:hover,
+.homeButton a:hover {
+    background-color: #5c6bc0;
+    transform: translateY(-5px);
+}
+#fly {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+#fly:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .AppBar {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    .links,
+    .homeButton a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #fly {
+        width: 250px;
+    }
 }
